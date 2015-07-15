@@ -1,0 +1,13 @@
+#!/usr/bin/python
+from Xlib import display
+from random import randint
+from time import sleep
+disp = display.Display()
+scr = disp.screen().root
+while(1):
+    poi = scr.query_pointer()
+    scr.warp_pointer(poi.win_x + randint(-50, 50), poi.win_y + randint(-50, 50))
+    disp.sync()
+    scr.warp_pointer(poi.win_x, poi.win_y)
+    disp.sync()
+    sleep(300)

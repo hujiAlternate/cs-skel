@@ -1,0 +1,30 @@
+# ~/.aliases  -- examples of fancy aliases
+
+alias	loadaliases	'source ~/.aliases'
+
+# Basic aliases
+#alias rm 'rm -i'	# ask on remove
+#alias cp 'cp -i'	# ask on overwrite
+#alias mv 'mv -i'	# ask on overwrite
+
+# A couple of useful aliases:
+alias	h	history
+alias	j	jobs
+alias	z	suspend
+
+alias -        'less'
+alias +        'more'
+alias hterm    'xterm -fn heb8x13 -fb heb8x13-bold &'
+
+# fast, unconfigured, windowless emacs
+#alias emacs-nw \emacs -nw --no-init-file --no-site-file \''--eval=(progn (setq make-backup-files nil) (setq auto-save-default nil) (setq auto-save-list-file-prefix nil))'\'
+
+# sums the sizes of all files recursively in the current directory
+alias dua       'find . -maxdepth 1 -mindepth 1 -print0 | xargs -0 du -sckx -- | sort -n'
+
+#colorful commands
+alias ls="ls --color"
+alias grep="grep --color"
+
+#enable GUI command after su
+alias su="su -"

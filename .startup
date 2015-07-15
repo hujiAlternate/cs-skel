@@ -1,0 +1,13 @@
+#!/bin/bash
+
+xhost $HOST
+
+skype &
+docky &
+marco --replace --composite &
+
+rm -f ~/.config/chromium/SingletonLock
+
+amixer sset Master 0%
+
+unexit &

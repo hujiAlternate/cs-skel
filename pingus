@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/lib/games/pingus/pingus --datadir /usr/share/games/pingus/data --window --disable-sound --disable-music 
